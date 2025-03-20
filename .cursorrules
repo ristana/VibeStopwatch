@@ -1,0 +1,87 @@
+{
+    "project_name": "VibeStopwatch",
+    "project_description": "A Python-based stopwatch application with both CLI and GUI interfaces",
+    "project_structure": {
+        "src/": {
+            "description": "Source code directory",
+            "contents": {
+                "main.py": "Main entry point for the application",
+                "gui/": {
+                    "description": "GUI-related code",
+                    "contents": {
+                        "window.py": "Main window implementation",
+                        "styles.py": "GUI styling and themes"
+                    }
+                },
+                "cli/": {
+                    "description": "CLI-related code",
+                    "contents": {
+                        "commands.py": "CLI command implementations"
+                    }
+                },
+                "core/": {
+                    "description": "Core stopwatch functionality",
+                    "contents": {
+                        "stopwatch.py": "Stopwatch implementation",
+                        "timer.py": "Timer functionality"
+                    }
+                }
+            }
+        },
+        "tests/": {
+            "description": "Test files",
+            "contents": {
+                "test_stopwatch.py": "Tests for stopwatch functionality",
+                "test_timer.py": "Tests for timer functionality"
+            }
+        },
+        "docs/": {
+            "description": "Documentation",
+            "contents": {
+                "README.md": "Project documentation",
+                "API.md": "API documentation"
+            }
+        }
+    },
+    "dependencies": {
+        "required": [
+            "PyQt6>=6.4.0",
+            "click>=8.1.0",
+            "rich>=13.0.0"
+        ],
+        "dev": [
+            "pytest>=7.0.0",
+            "black>=22.0.0",
+            "flake8>=4.0.0",
+            "mypy>=0.950"
+        ]
+    },
+    "git": {
+        "ignore": [
+            "*.pyc",
+            "__pycache__/",
+            "*.pyo",
+            "*.pyd",
+            ".Python",
+            "env/",
+            "build/",
+            "develop-eggs/",
+            "dist/",
+            "downloads/",
+            "eggs/",
+            ".eggs/",
+            "lib/",
+            "lib64/",
+            "parts/",
+            "sdist/",
+            "var/",
+            "*.egg-info/",
+            ".installed.cfg",
+            "*.egg",
+            ".env",
+            ".venv",
+            "venv/",
+            "ENV/"
+        ]
+    }
+} 
