@@ -49,4 +49,4 @@ htmlcov/
 .mypy_cache/
 
 # Logs
-*.log 
+*.log
